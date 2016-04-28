@@ -1,4 +1,9 @@
 {
+  "name": "cyk-site",
+  "version": "1.0.0",
+  "description": "Build for CyK Site",
+  "author": "Mark Hkr <k@cyk.mx>",
+  "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^6.0.3",
     "babel": "^5.8.29",
