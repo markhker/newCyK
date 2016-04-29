@@ -1,5 +1,16 @@
-# www.robotstxt.org/
-
 # Allow crawling of all content
 User-agent: *
-Disallow:
+Disallow: /font/
+Disallow: /assets/
+Disallow: /partials/
+Disallow: /scss/
+Disallow: /proyects/img/
+Disallow: /proyects/css/
+Disallow: /proyects/assets/
+Disallow: /proyects/js/
+Disallow: /contact.php
+Disallow: /cgi-bin/
+
+Sitemap: https://cyk.com/sitemap.xml
+
+Host: cyk.com/
