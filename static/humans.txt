@@ -3,13 +3,15 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    MarkHkr -- UI/UX Designer & Fullstack Developer -- @markhker
+    Sekyus -- CyberSecurity -- @Sekyus01
 
 # THANKS
 
-    <name>
+    Konstantin Tarkus (@koistya) for https://github.com/koistya/react-static-boilerplate
 
 # TECHNOLOGY COLOPHON
 
     ES2015, HTML5, CSS3
     React, Normalize.css
+    Material-UI
