@@ -5,12 +5,14 @@ import config from '../../config';
 
 function Html({ title, description, body, debug }) {
   return (
-    <html className="no-js" lang="">
+    <html className="no-js" lang="es_MX">
       <head>
         <meta charSet="utf-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <title>{title || config.title}</title>
         <meta name="description" content={description || config.description} />
+        <meta name="author" content={author || config.author}/>
+        <meta property="fb:admins" content={fbadmin || config.fbadmin}/>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="apple-touch-icon" href="apple-touch-icon.png" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
