@@ -1,4 +1,29 @@
+/*
+ * Custom Fonts
+ * -------------------------------------------------------------------------- */
 
+@font-face {
+ font-family: 'code';
+ src: url("https://storage.googleapis.com/cykloud.appspot.com/static/font/code/CodeFontRegular.eot");
+ src: url("https://storage.googleapis.com/cykloud.appspot.com/static/font/code/CodeFontRegular.eot?#iefix") format(‘embedded-opentype’),
+ url("https://storage.googleapis.com/cykloud.appspot.com/static/font/code/CodeFontRegular.woff2") format(‘woff2'),
+ url("https://storage.googleapis.com/cykloud.appspot.com/static/font/code/CodeFontRegular.woff") format(‘woff’),
+ url("https://storage.googleapis.com/cykloud.appspot.com/static/font/code/CodeFontRegular.ttf") format(‘truetype’),
+ url("https://storage.googleapis.com/cykloud.appspot.com/static/font/code/CodeFontRegular.svg#Code-Pro-LC") format(‘svg’);
+ font-weight: 300;
+ font-style: normal;
+}
+@font-face {
+ font-family: 'code';
+ src: url("https://storage.googleapis.com/cykloud.appspot.com/static/font/code/CodeFontLight.eot");
+ src: url("https://storage.googleapis.com/cykloud.appspot.com/static/font/code/CodeFontLight.eot?#iefix") format(‘embedded-opentype’),
+ url("https://storage.googleapis.com/cykloud.appspot.com/static/font/code/CodeFontLight.woff2") format(‘woff2'),
+ url("https://storage.googleapis.com/cykloud.appspot.com/static/font/code/CodeFontLight.woff") format(‘woff’),
+ url("https://storage.googleapis.com/cykloud.appspot.com/static/font/code/CodeFontLight.ttf") format(‘truetype’),
+ url("https://storage.googleapis.com/cykloud.appspot.com/static/font/code/CodeFontLight.svg#Code-Pro-Light-LC") format(‘svg’);
+ font-weight: 100;
+ font-style: normal;
+}
 
 /*
  * Scaffolding
@@ -12,6 +37,7 @@ $brand-color: #08a6d6;
  * Typography
  * -------------------------------------------------------------------------- */
 
+$titles: "code", 'Helvetica', sans-serif;
 $font-family-base: 'Roboto', 'Helvetica', sans-serif;
 
 /*
