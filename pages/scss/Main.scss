@@ -1,4 +1,9 @@
 @import '../../components/variables.scss';
+@import '../../components/global.scss';
+
+.Layout {
+  margin: 0 auto;
+}
 
 .home-header {
     width: 100%;
@@ -12,8 +17,9 @@
         bottom: 0;
         right: 5vw;
         text-align: right;
-        font-size: 5vw;
-        font-family: $titles;
+        line-height: 5rem;
+        font-size: 6rem;
+        font-family: $titles-font;
         font-weight: 300;
     }
 }

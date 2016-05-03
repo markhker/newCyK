@@ -13,7 +13,7 @@ function Html({ title, description, author, fbadmin, body, debug }) {
         <meta name="description" content={description || config.description} />
         <meta name="author" content={author || config.author} />
         <meta property="fb:admins" content={fbadmin || config.fbadmin} />
-        <meta name="theme-color" content="#005ec4" />
+        <meta name="theme-color" content="#08a6d6" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         
         <link rel="image_src" href="https://storage.googleapis.com/cykloud.appspot.com/static/img/tech/favicon.png" />

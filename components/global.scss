@@ -1,0 +1,196 @@
+@import 'variables.scss';
+/*
+ * Custom Fonts
+ * -------------------------------------------------------------------------- */
+/*
+@font-face {
+ font-family: 'code';
+ src: url("https://storage.googleapis.com/cykloud.appspot.com/static/font/code/CodeFontLight.eot");
+ src: url("https://storage.googleapis.com/cykloud.appspot.com/static/font/code/CodeFontLight.eot?#iefix") format("embedded-opentype"),
+ url("https://storage.googleapis.com/cykloud.appspot.com/static/font/code/CodeFontLight.woff2") format("woff2"),
+ url("https://storage.googleapis.com/cykloud.appspot.com/static/font/code/CodeFontLight.woff") format("wof"’),
+ url("https://storage.googleapis.com/cykloud.appspot.com/static/font/code/CodeFontLight.ttf") format("truetype"),
+ url("https://storage.googleapis.com/cykloud.appspot.com/static/font/code/CodeFontLight.svg#Code-Pro-Light-LC") format("svg");
+ font-weight: 100;
+ font-style: normal;
+}
+@font-face {
+ font-family: 'code';
+ src: url("https://storage.googleapis.com/cykloud.appspot.com/static/font/code/CodeFontRegular.eot");
+ src: url("https://storage.googleapis.com/cykloud.appspot.com/static/font/code/CodeFontRegular.eot?#iefix") format("embedded-opentype"),
+ url("https://storage.googleapis.com/cykloud.appspot.com/static/font/code/CodeFontRegular.woff2") format("woff2"),
+ url("https://storage.googleapis.com/cykloud.appspot.com/static/font/code/CodeFontRegular.woff") format("woff"),
+ url("https://storage.googleapis.com/cykloud.appspot.com/static/font/code/CodeFontRegular.ttf") format("truetype"),
+ url("https://storage.googleapis.com/cykloud.appspot.com/static/font/code/CodeFontRegular.svg#Code-Pro-LC") format("svg");
+ font-weight: 300;
+ font-style: normal;
+}
+
+@font-face {
+ font-family: 'geo';
+ src: url("https://storage.googleapis.com/cykloud.appspot.com/static/font/geo/GeoLight.eot");
+ src: url("https://storage.googleapis.com/cykloud.appspot.com/static/font/geo/GeoLight.eot?#iefix") format("embedded-opentype"),
+ url("https://storage.googleapis.com/cykloud.appspot.com/static/font/geo/GeoLight.woff2") format("woff2"),
+ url("https://storage.googleapis.com/cykloud.appspot.com/static/font/geo/GeoLight.woff") format("wof"’),
+ url("https://storage.googleapis.com/cykloud.appspot.com/static/font/geo/GeoLight.ttf") format("truetype"),
+ url("https://storage.googleapis.com/cykloud.appspot.com/static/font/geo/GeoLight.svg#GeoLight") format("svg");
+ font-weight: 100;
+ font-style: normal;
+}
+@font-face {
+ font-family: 'geo';
+ src: url("https://storage.googleapis.com/cykloud.appspot.com/static/font/geo/GeoThin.eot");
+ src: url("https://storage.googleapis.com/cykloud.appspot.com/static/font/geo/GeoThin.eot?#iefix") format("embedded-opentype"),
+ url("https://storage.googleapis.com/cykloud.appspot.com/static/font/geo/GeoThin.woff2") format("woff2"),
+ url("https://storage.googleapis.com/cykloud.appspot.com/static/font/geo/GeoThin.woff") format("wof"’),
+ url("https://storage.googleapis.com/cykloud.appspot.com/static/font/geo/GeoThin.ttf") format("truetype"),
+ url("https://storage.googleapis.com/cykloud.appspot.com/static/font/geo/GeoThin.svg#GeoThin") format("svg");
+ font-weight: 200;
+ font-style: normal;
+}
+@font-face {
+ font-family: 'geo';
+ src: url("https://storage.googleapis.com/cykloud.appspot.com/static/font/geo/GeoRegular.eot");
+ src: url("https://storage.googleapis.com/cykloud.appspot.com/static/font/geo/GeoRegular.eot?#iefix") format("embedded-opentype"),
+ url("https://storage.googleapis.com/cykloud.appspot.com/static/font/geo/GeoRegular.woff2") format("woff2"),
+ url("https://storage.googleapis.com/cykloud.appspot.com/static/font/geo/GeoRegular.woff") format("wof"’),
+ url("https://storage.googleapis.com/cykloud.appspot.com/static/font/geo/GeoRegular.ttf") format("truetype"),
+ url("https://storage.googleapis.com/cykloud.appspot.com/static/font/geo/GeoRegular.svg#geomanist_regularregular") format("svg");
+ font-weight: 300;
+ font-style: normal;
+}
+@font-face {
+ font-family: 'geo';
+ src: url("https://storage.googleapis.com/cykloud.appspot.com/static/font/geo/GeoBook.eot");
+ src: url("https://storage.googleapis.com/cykloud.appspot.com/static/font/geo/GeoBook.eot?#iefix") format("embedded-opentype"),
+ url("https://storage.googleapis.com/cykloud.appspot.com/static/font/geo/GeoBook.woff2") format("woff2"),
+ url("https://storage.googleapis.com/cykloud.appspot.com/static/font/geo/GeoBook.woff") format("wof"’),
+ url("https://storage.googleapis.com/cykloud.appspot.com/static/font/geo/GeoBook.ttf") format("truetype"),
+ url("https://storage.googleapis.com/cykloud.appspot.com/static/font/geo/GeoBook.svg#GeoBook") format("svg");
+ font-weight: 500;
+ font-style: normal;
+}
+@font-face {
+ font-family: 'geo';
+ src: url("https://storage.googleapis.com/cykloud.appspot.com/static/font/geo/GeoBold.eot");
+ src: url("https://storage.googleapis.com/cykloud.appspot.com/static/font/geo/GeoBold.eot?#iefix") format("embedded-opentype"),
+ url("https://storage.googleapis.com/cykloud.appspot.com/static/font/geo/GeoBold.woff2") format("woff2"),
+ url("https://storage.googleapis.com/cykloud.appspot.com/static/font/geo/GeoBold.woff") format("wof"’),
+ url("https://storage.googleapis.com/cykloud.appspot.com/static/font/geo/GeoBold.ttf") format("truetype"),
+ url("https://storage.googleapis.com/cykloud.appspot.com/static/font/geo/GeoBold.svg#UntitledTTF") format("svg");
+ font-weight: 700;
+ font-style: normal;
+}
+*/
+
+@font-face {
+ font-family: 'code';
+ src: url(fonts/code/CodeFontLight.eot);
+ src: url(fonts/code/CodeFontLight.eot?#iefix) format('embedded-opentype'),
+ url(fonts/code/CodeFontLight.woff2) format('woff2'),
+ url(fonts/code/CodeFontLight.woff) format('woff'),
+ url(fonts/code/CodeFontLight.ttf) format('truetype'),
+ url(fonts/code/CodeFontLight.svg#Code-Pro-Light-LC) format('svg');
+ font-weight: 100;
+ font-style: normal;
+}
+@font-face {
+ font-family: 'code';
+ src: url(fonts/code/CodeFontRegular.eot);
+ src: url(fonts/code/CodeFontRegular.eot?#iefix) format('embedded-opentype'),
+ url(fonts/code/CodeFontRegular.woff2) format('woff2'),
+ url(fonts/code/CodeFontRegular.woff) format('woff'),
+ url(fonts/code/CodeFontRegular.ttf) format('truetype'),
+ url(fonts/code/CodeFontRegular.svg#Code-Pro-LC) format('svg');
+ font-weight: 300;
+ font-style: normal;
+}
+
+@font-face {
+ font-family: 'geo';
+ src: url(fonts/geo/GeoLight.eot);
+ src: url(fonts/geo/GeoLight.eot?#iefix) format('embedded-opentype'),
+ url(fonts/geo/GeoLight.woff2) format('woff2'),
+ url(fonts/geo/GeoLight.woff) format('woff'),
+ url(fonts/geo/GeoLight.ttf) format('truetype'),
+ url(fonts/geo/GeoLight.svg#GeoLight) format('svg');
+ font-weight: 100;
+ font-style: normal;
+}
+@font-face {
+ font-family: 'geo';
+ src: url(fonts/geo/GeoThin.eot);
+ src: url(fonts/geo/GeoThin.eot?#iefix) format('embedded-opentype'),
+ url(fonts/geo/GeoThin.woff2) format('woff2'),
+ url(fonts/geo/GeoThin.woff) format('woff'),
+ url(fonts/geo/GeoThin.ttf) format('truetype'),
+ url(fonts/geo/GeoThin.svg#GeoThin) format('svg');
+ font-weight: 200;
+ font-style: normal;
+}
+@font-face {
+ font-family: 'geo';
+ src: url(fonts/geo/GeoRegular.eot);
+ src: url(fonts/geo/GeoRegular.eot?#iefix) format('embedded-opentype'),
+ url(fonts/geo/GeoRegular.woff2) format('woff2'),
+ url(fonts/geo/GeoRegular.woff) format('woff'),
+ url(fonts/geo/GeoRegular.ttf) format('truetype'),
+ url(fonts/geo/GeoRegular.svg#geomanist_regularregular) format('svg');
+ font-weight: 300;
+ font-style: normal;
+}
+@font-face {
+ font-family: 'geo';
+ src: url(fonts/geo/GeoBook.eot);
+ src: url(fonts/geo/GeoBook.eot?#iefix) format('embedded-opentype'),
+ url(fonts/geo/GeoBook.woff2) format('woff2'),
+ url(fonts/geo/GeoBook.woff) format('woff'),
+ url(fonts/geo/GeoBook.ttf) format('truetype'),
+ url(fonts/geo/GeoBook.svg#GeoBook) format('svg');
+ font-weight: 500;
+ font-style: normal;
+}
+@font-face {
+ font-family: 'geo';
+ src: url(fonts/geo/GeoBold.eot);
+ src: url(fonts/geo/GeoBold.eot?#iefix) format('embedded-opentype'),
+ url(fonts/geo/GeoBold.woff2) format('woff2'),
+ url(fonts/geo/GeoBold.woff) format('woff'),
+ url(fonts/geo/GeoBold.ttf) format('truetype'),
+ url(fonts/geo/GeoBold.svg#UntitledTTF) format('svg');
+ font-weight: 700;
+ font-style: normal;
+}
+
+/*Global styles*/
+::selection {
+    background-color: $cyk-red;
+    color: $w;
+}
+::-moz-selection {
+    background-color: #FFDD33;
+    color: #222222;
+}
+
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: calc(0.875em + 0.25 * (100vw - 80em) / 40);
+    font-size: -webkit-calc(87.5% + 0.25 * (100vw - 8000%) / 40);
+    font-size: -ms-calc(0.875em + 0.25 * (100vw - 80em) / 40);
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $w;
+    font-family: $text-font;
+    color: $b-2;
+}
