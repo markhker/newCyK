@@ -114,7 +114,7 @@
  url(fonts/geo/GeoLight.woff) format('woff'),
  url(fonts/geo/GeoLight.ttf) format('truetype'),
  url(fonts/geo/GeoLight.svg#GeoLight) format('svg');
- font-weight: 100;
+ font-weight: 200;
  font-style: normal;
 }
 @font-face {
@@ -125,7 +125,7 @@
  url(fonts/geo/GeoThin.woff) format('woff'),
  url(fonts/geo/GeoThin.ttf) format('truetype'),
  url(fonts/geo/GeoThin.svg#GeoThin) format('svg');
- font-weight: 200;
+ font-weight: 100;
  font-style: normal;
 }
 @font-face {
@@ -179,6 +179,9 @@ html {
     font-size: calc(0.875em + 0.25 * (100vw - 80em) / 40);
     font-size: -webkit-calc(87.5% + 0.25 * (100vw - 8000%) / 40);
     font-size: -ms-calc(0.875em + 0.25 * (100vw - 80em) / 40);
+    font-family: $text-font;
+    font-weight: 200;
+    color: $b-2;
 }
 
 *, *:before, *:after {
@@ -192,5 +195,6 @@ body {
     padding: 0;
     background-color: $w;
     font-family: $text-font;
+    font-weight: 200;
     color: $b-2;
 }
