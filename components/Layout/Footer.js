@@ -18,11 +18,11 @@ export default class Footer extends React.Component {
   render() {
     return (
       <footer className="col-1 main-footer">
-        <div className="col-16-24 col-s-12-24 col-m-9-24 col-l-5-24 footer-logo">
+        <div className="col-16-24 col-s-12-24 col-m-9-24 col-l-6-24 footer-logo">
             <img className="res-img" src="https://storage.googleapis.com/cykloud.appspot.com/static/img/tech/logot.png" alt="C&K Logotype" />
         </div>
         
-        <div className="col-10-24 col-m-8-24 col-l-5-24 footer-social">
+        <div className="col-16-24 col-m-9-24 col-l-7-24 footer-social">
             <IconButton
               iconClassName="social-face-2" tooltip="cloudandkloud"
               tooltipPosition="top-center"
@@ -52,7 +52,7 @@ export default class Footer extends React.Component {
             />
         </div>
         
-        <p>© 2015–2016  Cloud & Kloud</p>
+        <p className="col-1">© 2015–2016  Cloud & Kloud</p>
       </footer>
     );
   }

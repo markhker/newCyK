@@ -1,5 +1,6 @@
 
 import React, { PropTypes } from 'react';
+import './grid.scss';
 import './Layout.scss';
 import Navigation from '../Navigation';
 import MiniContact from './Minicontact';

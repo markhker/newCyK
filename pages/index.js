@@ -1,7 +1,6 @@
 
 import React, { Component } from 'react';
-import './scss/grid.scss';
-import './scss/Main.scss';
+import './scss/home.scss';
 
 import Card from 'material-ui/lib/card/card';
 import CardActions from 'material-ui/lib/card/card-actions';
@@ -41,6 +40,7 @@ const CardOne = () => (
     </CardText>
     <CardActions>
       <FloatingActionButton style={style} linkButton={true}
+      backgroundColor={'#08a6d6'}
       href="/nosotros/"
       onClick={Link.handleClick}>
         <NavigationChevronRight />
@@ -65,6 +65,7 @@ const CardTwo = () => (
     </CardText>
     <CardActions>
       <FloatingActionButton style={style} linkButton={true}
+      backgroundColor={'#08a6d6'}
       href="/servicios/"
       onClick={Link.handleClick}>
         <NavigationChevronRight />

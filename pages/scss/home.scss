@@ -1,0 +1,126 @@
+@import '../../components/variables.scss';
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("fonts/icon/flaticon1.eot");
+  src: url("fonts/icon/flaticon1.eot?#iefix") format("embedded-opentype"),
+       url("fonts/icon/flaticon1.woff") format("woff"),
+       url("fonts/icon/flaticon1.ttf") format("truetype"),
+       url("fonts/icon/flaticon1.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("fonts/icon/flaticon1.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+    font-family: Flaticon;
+    font-style: normal;
+    line-height: 10rem;
+}
+
+.flaticon-gears:before { content: "\f110"; }
+.flaticon-pulse:before { content: "\f121"; }
+.flaticon-water:before { content: "\f131"; }
+
+
+.home-header {
+    width: 100%;
+    height: 90vh;
+    background: url(https://storage.googleapis.com/cykloud.appspot.com/static/img/tech/header-480.jpg) top center no-repeat;
+    background-color: $w;
+    background-size: 100vw;
+    position: relative;
+    
+    h1 {
+        position: absolute;
+        bottom: 0;
+        right: 5vw;
+        text-align: right;
+        line-height: 5rem;
+        font-size: 6rem;
+        font-family: $titles-font;
+        font-weight: 300;
+    }
+}
+
+.home-section-1 {
+    justify-content: space-around;
+    text-align: center;
+    padding: 2rem 0 5rem;
+    background-color: $w;
+    margin-top: -5px;
+    
+    h1 {
+        font-weight: 200;
+        font-size: 3rem;
+        justify-content: space-around;
+        margin-bottom: 2rem;
+    }
+    
+    article {
+        flex-direction: column;
+        align-items: center;
+        
+        .icon {
+            width: 10rem;
+            height: 10rem;
+            background-color: $cyk-blue1;
+            border-radius: 50%;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        }
+        
+        i {
+            font-size: 5rem;
+            padding: 2rem;
+            color: $w;
+        }
+        
+        h2 {
+            font-weight: 500;
+            font-size: 2rem;
+        }
+        
+        p {
+            font-weight: 200;
+            font-size: 1.8rem;
+        }
+    }
+}
+
+.home-section-2 {
+    justify-content: space-around;
+    background-color: $section-color;
+    padding: 4rem 0 0;
+}
+
+@media (min-width: $sm) {
+    .home-header {
+        background: url(https://storage.googleapis.com/cykloud.appspot.com/static/img/tech/header-768.jpg) top center no-repeat;
+        background-color: $w;
+        background-size: 100vw;
+    }
+}
+
+@media (min-width: $md) {
+    .home-header {
+        background: url(https://storage.googleapis.com/cykloud.appspot.com/static/img/tech/header-1024.jpg) top center no-repeat;
+        background-color: $w;
+        background-size: 100vw;
+        padding: 2rem 0 1rem;
+    }
+}
+
+@media (min-width: $lg) {
+    .home-header {
+        background: url(https://storage.googleapis.com/cykloud.appspot.com/static/img/tech/header-1920.jpg) top center no-repeat;
+        background-color: $w;
+        background-size: 100vw;
+    }  
+}

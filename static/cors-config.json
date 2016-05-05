@@ -1,8 +1,8 @@
 [
   {
-    "origin": ["*"],
+    "origin": ["https://cykloud.appspot.com"],
     "responseHeader": ["Content-Type"],
     "method": ["GET", "HEAD", "DELETE"],
-    "maxAgeSeconds": 36600
+    "maxAgeSeconds": 3600
   }
 ]

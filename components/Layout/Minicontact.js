@@ -16,7 +16,12 @@ export default class MiniContact extends React.Component {
       <section className="col-1 col-m-12-24 mini-contact">
         <h2 className="col-20-24">Habla con nosotros</h2>
         <p className="col-21-24">Aprende más acerca de lo que hacemos</p>
-        <RaisedButton className="button" label="Contáctanos" secondary={true} labelStyle={contactStyle} linkButton={true}
+        <RaisedButton className="button" 
+        label="Contáctanos" 
+        secondary={true} 
+        backgroundColor={'#f7b50c'}
+        labelStyle={contactStyle} 
+        linkButton={true}
         href="/contacto/"
         onClick={Link.handleClick}/>
       </section>
