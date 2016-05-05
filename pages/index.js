@@ -10,12 +10,14 @@ import CardTitle from 'material-ui/lib/card/card-title';
 import FloatingActionButton from 'material-ui/lib/floating-action-button';
 import NavigationChevronRight from 'material-ui/lib/svg-icons/navigation/chevron-right';
 import CardText from 'material-ui/lib/card/card-text';
+import Link from '../components/Link';
 
 
 const overflow = {
   overflow: 'visible',
   marginBottom: 5+'rem',
 };
+
 const style = {
   marginLeft: 85+'%',
   marginTop: 3+'%',
@@ -27,7 +29,7 @@ const CardOne = () => (
   <Card style={overflow}>
   <CardMedia>
       <img
-        srcset="https://storage.googleapis.com/cykloud.appspot.com/static/img/tech/home-1-1024.jpg  1024w, 
+        srcSet="https://storage.googleapis.com/cykloud.appspot.com/static/img/tech/home-1-1024.jpg  1024w, 
                 https://storage.googleapis.com/cykloud.appspot.com/static/img/tech/home-1-768.jpg  960w,
                 https://storage.googleapis.com/cykloud.appspot.com/static/img/tech/home-1-480.jpg   480w"
         src="https://storage.googleapis.com/cykloud.appspot.com/static/img/tech/home-1-768.jpg"
@@ -38,7 +40,9 @@ const CardOne = () => (
       Somos un equipo de expertos en tecnologías en la nube. Una empresa de desarrollo y tecnología innovadora en Cloud Computing capaz de llevar a tu compañía al siguiente nivel.
     </CardText>
     <CardActions>
-      <FloatingActionButton style={style}>
+      <FloatingActionButton style={style} linkButton={true}
+      href="/nosotros/"
+      onClick={Link.handleClick}>
         <NavigationChevronRight />
       </FloatingActionButton>
     </CardActions>
@@ -49,7 +53,7 @@ const CardTwo = () => (
   <Card style={overflow}>
   <CardMedia>
       <img
-        srcset="https://storage.googleapis.com/cykloud.appspot.com/static/img/tech/home-2-1024.jpg  1024w, 
+        srcSet="https://storage.googleapis.com/cykloud.appspot.com/static/img/tech/home-2-1024.jpg  1024w, 
                 https://storage.googleapis.com/cykloud.appspot.com/static/img/tech/home-2-768.jpg  960w,
                 https://storage.googleapis.com/cykloud.appspot.com/static/img/tech/home-2-480.jpg   480w"
         src="https://storage.googleapis.com/cykloud.appspot.com/static/img/tech/home-2-768.jpg"
@@ -60,7 +64,9 @@ const CardTwo = () => (
       Ayudamos a tu organización a adaptarse a este nuevo mundo, llegar más lejos y obtener todos los beneficios del Cloud Computing. Nos esforzamos y enfocamos en la acción.
     </CardText>
     <CardActions>
-      <FloatingActionButton style={style}>
+      <FloatingActionButton style={style} linkButton={true}
+      href="/servicios/"
+      onClick={Link.handleClick}>
         <NavigationChevronRight />
       </FloatingActionButton>
     </CardActions>
@@ -116,8 +122,28 @@ export default class extends Component {
             <CardTwo />
         </div>
       </section>
+      
+      
+      
+      
     </div>
     );
   }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

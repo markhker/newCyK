@@ -2,8 +2,6 @@ import React from 'react';
 import AppBar from 'material-ui/lib/app-bar';
 import LeftNav from 'material-ui/lib/left-nav';
 import MenuItem from 'material-ui/lib/menus/menu-item';
-//import IconButton from 'material-ui/lib/icon-button';
-//import NavigationMenu from 'material-ui/lib/svg-icons/navigation/menu';
 import FlatButton from 'material-ui/lib/flat-button';
 import Link from '../Link';
 import injectTapEventPlugin from 'react-tap-event-plugin';
@@ -25,22 +23,20 @@ export default class Navigation extends React.Component {
     return (
       <div>
         <AppBar
-            title="Cloud & Kloud"
-            //showMenuIconButton={false}
-            //iconElementRight={<IconButton><NavigationMenu /></IconButton>}
+            title=" "
             onLeftIconButtonTouchTap={this.handleToggle}
           >
           <FlatButton 
             label="Servicios"
             linkButton={true}
             primary={true}
-            href="/servicios" 
+            href="/servicios/" 
             onClick={Link.handleClick}/>
           <FlatButton 
             label="Nosotros"
             linkButton={true}
             primary={true}
-            href="/nosotros" 
+            href="/nosotros/" 
             onClick={Link.handleClick}/>
           </AppBar>
         <LeftNav
