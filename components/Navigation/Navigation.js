@@ -20,11 +20,6 @@ import ContentSend from 'material-ui/lib/svg-icons/content/send';
 
 injectTapEventPlugin();
 
-var document = typeof document === 'undefined' ? '' : document;
-
-var currentUrl = document.URL;
-console.log(currentUrl);
-
 const barButtonStyle = {
   marginRight: 2+'rem',
 };
@@ -72,14 +67,14 @@ export default class Navigation extends React.Component {
             label="Servicios"
             linkButton={true}
             primary={true}
-            href="/servicios/"
+            href="/servicios"
             labelStyle={buttonLabel}
             onClick={Link.handleClick}/>
           <FlatButton 
             label="Nosotros"
             linkButton={true}
             primary={true}
-            href="/nosotros/"
+            href="/nosotros"
             labelStyle={buttonLabel}
             onClick={Link.handleClick}/></div>}
           >
@@ -105,19 +100,19 @@ export default class Navigation extends React.Component {
                 onClick={Link.handleClick} />
               <ListItem primaryText="Servicios" leftIcon={<FileCloudDone />} onTouchTap={this.handleClose}
               linkButton={true}
-                href="/servicios/" 
+                href="/servicios" 
                 onClick={Link.handleClick}/>
               <ListItem primaryText="Nosotros" leftIcon={<ActionInfo />} onTouchTap={this.handleClose}
               linkButton={true}
-                href="/nosotros/" 
+                href="/nosotros" 
                 onClick={Link.handleClick}/>
               <ListItem primaryText="Blog" leftIcon={<ActionBookmark />} onTouchTap={this.handleClose}
               linkButton={true}
-                href="/blog/" 
+                href="/blog" 
                 onClick={Link.handleClick}/>
               <ListItem primaryText="Contáctanos" leftIcon={<ContentSend />} onTouchTap={this.handleClose}
               linkButton={true}
-                href="/contacto/" 
+                href="/contacto" 
                 onClick={Link.handleClick}/>
             </List>
               

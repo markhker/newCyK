@@ -22,7 +22,7 @@ export default class MiniContact extends React.Component {
         backgroundColor={'#f7b50c'}
         labelStyle={contactStyle} 
         linkButton={true}
-        href="/contacto/"
+        href="/contacto"
         onClick={Link.handleClick}/>
       </section>
     );

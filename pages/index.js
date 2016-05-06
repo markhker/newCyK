@@ -81,6 +81,9 @@ export default class extends Component {
     return (
     <div>
       <header className="home-header">
+        <div className="main-logo">
+            <a href="/"><img src="https://storage.googleapis.com/cykloud.appspot.com/static/img/tech/logo.png" alt="Logo C&K" /></a>
+        </div>
         <h1>Cloud<br/>Solutions</h1>
       </header>
       

@@ -197,4 +197,13 @@ body {
     font-family: $text-font;
     font-weight: 200;
     color: $b-2;
+    
+    .main-logo {
+        width: 10rem;
+        margin-left: 3rem;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
 }
