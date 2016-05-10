@@ -1,0 +1,165 @@
+@import '../../components/variables.scss';
+
+.about-header {
+    width: 100%;
+    height: 50vh;
+    background: url(https://storage.googleapis.com/cykloud.appspot.com/static/img/tech/about-1-480.jpg) center center no-repeat;
+    background-color: $w;
+    background-size: cover;
+    position: relative;
+    
+    h1 {
+        position: absolute;
+        bottom: 0;
+        right: 5vw;
+        text-align: right;
+        line-height: 5rem;
+        color: $w;
+        font-size: 6rem;
+        font-family: $titles-font;
+        font-weight: 300;
+        text-shadow: 1px 1px 1px #000000;
+    }
+}
+
+.about-section-1 {
+    justify-content: space-around;
+    padding: 2rem 0 5rem;
+    background-color: $w;
+    margin-top: -5px;
+    
+    & > div {
+        justify-content: space-around;
+    }
+    
+    .paper {
+        margin-bottom: 2rem;
+    }
+    
+    h1 {
+        display: block;
+        font-weight: 200;
+        font-size: 3rem;
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+    
+    article {
+        flex-direction: column;
+        align-items: center;
+        
+        .icon {
+            width: 10rem;
+            height: 10rem;
+            background-color: $cyk-blue1;
+            border-radius: 50%;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        }
+        
+        i {
+            font-size: 5rem;
+            padding: 2rem;
+            color: $w;
+        }
+        
+        h2 {
+            font-weight: 500;
+            font-size: 2rem;
+        }
+        
+        p {
+            font-weight: 200;
+            font-size: 1.8rem;
+        }
+    }
+}
+
+.standards {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: $w;
+    justify-content: center;
+    
+    h2 {
+        font-weight: 300;
+        margin-bottom: 1.5rem;
+        font-family: $titles-font;
+        font-size: 3rem;
+        color: $cyk-yellow;
+    }
+    
+    .first {
+        text-align: left;
+        background: 0 0;
+    }
+    
+    .col-1 {
+        justify-content: center;
+    }
+    
+    .standard {
+        padding: 0 2rem 0 0;
+        h3 {
+            color: $cyk-blue1;
+            font-weight: 200;
+            font-size: 2.8rem;
+            margin-bottom: 0;
+        }
+        
+        h4 {
+            font-weight: 300;
+            font-size: 2.3rem;
+            margin-top: 0;
+        }
+        
+        p {
+            font-weight: 300;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@media (min-width: $sm) {
+    .about-header {
+        background: url(https://storage.googleapis.com/cykloud.appspot.com/static/img/tech/about-1-768.jpg) center center no-repeat;
+        background-color: $w;
+        background-size: cover;
+    }
+}
+
+@media (min-width: $md) {
+    .about-header {
+        background: url(https://storage.googleapis.com/cykloud.appspot.com/static/img/tech/about-1-1024.jpg) center center no-repeat;
+        background-color: $w;
+        background-size: cover;
+        padding: 2rem 0 1rem;
+    }
+    
+    .standards {
+        h2 {
+            width: 100%;
+            padding-right: 2rem;
+            text-align: right;
+        }
+        
+        .first {
+            text-align: right;
+            background: url(https://storage.googleapis.com/cykloud.appspot.com/static/img/tech/line_standards.svg) right 2rem no-repeat;
+            background-size: .75rem 2100px;
+            padding-right: 4rem;
+        }
+        
+        .second {
+            margin-left: 4rem;
+            padding-right: 4rem;
+        }
+    }
+}
+
+@media (min-width: $lg) {
+    .about-header {
+        background: url(https://storage.googleapis.com/cykloud.appspot.com/static/img/tech/about-1-1920.jpg) center center no-repeat;
+        background-color: $w;
+        background-size: cover;
+    }  
+}

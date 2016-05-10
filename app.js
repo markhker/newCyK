@@ -8,6 +8,7 @@ import Layout from './components/Layout';
 
 const routes = {}; // Auto-generated on build. See tools/lib/routes-loader.js
 
+//var path = null;
 
 const route = async (path, callback) => {
   const handler = routes[path] || routes['/404'];
@@ -20,7 +21,8 @@ function run() {
   Location.listen(location => {
     route(location.pathname, async (component) => ReactDOM.render(component, container, () => {
       // Track the page view event via Google Analytics
-      //window.ga('send', 'pageview');
+      window.ga('send', 'pageview');
+      //path = location.pathname;
     }));
   });
 }

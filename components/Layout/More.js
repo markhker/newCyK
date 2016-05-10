@@ -2,6 +2,10 @@ import React from 'react';
 import RaisedButton from 'material-ui/lib/raised-button';
 import Link from '../Link';
 
+import MyRawTheme from '../theme';
+import ThemeManager from 'material-ui/lib/styles/theme-manager';
+import ThemeDecorator from 'material-ui/lib/styles/theme-decorator';
+
 const contactStyle = {
   fontSize: 1.5+'rem',
   padding: 2+'rem',
@@ -12,6 +16,7 @@ const contactStyle = {
 const trainingColor = '#f44336';
 const cfColor = '#8E44AD';
 
+@ThemeDecorator(ThemeManager.getMuiTheme(MyRawTheme))
 export default class More extends React.Component {
 
   render() {

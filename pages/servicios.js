@@ -8,6 +8,11 @@ import CardText from 'material-ui/lib/card/card-text';
 import CardMedia from 'material-ui/lib/card/card-media';
 import Link from '../components/Link';
 
+import MyRawTheme from '../components/theme';
+import ThemeManager from 'material-ui/lib/styles/theme-manager';
+import ThemeDecorator from 'material-ui/lib/styles/theme-decorator';
+
+@ThemeDecorator(ThemeManager.getMuiTheme(MyRawTheme))
 export default class extends Component {
 
   render() {

@@ -2,6 +2,10 @@ import React from 'react';
 import RaisedButton from 'material-ui/lib/raised-button';
 import Link from '../Link';
 
+import MyRawTheme from '../theme';
+import ThemeManager from 'material-ui/lib/styles/theme-manager';
+import ThemeDecorator from 'material-ui/lib/styles/theme-decorator';
+
 const contactStyle = {
   fontSize: 1.5+'rem',
   padding: 2+'rem',
@@ -9,6 +13,7 @@ const contactStyle = {
   lineHeight: 5+'rem',
 };
 
+@ThemeDecorator(ThemeManager.getMuiTheme(MyRawTheme))
 export default class MiniContact extends React.Component {
 
   render() {

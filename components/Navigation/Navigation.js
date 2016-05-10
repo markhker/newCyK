@@ -18,6 +18,10 @@ import ActionBookmark from 'material-ui/lib/svg-icons/action/bookmark';
 import FileCloudDone from 'material-ui/lib/svg-icons/file/cloud-done';
 import ContentSend from 'material-ui/lib/svg-icons/content/send';
 
+import MyRawTheme from '../theme';
+import ThemeManager from 'material-ui/lib/styles/theme-manager';
+import ThemeDecorator from 'material-ui/lib/styles/theme-decorator';
+
 injectTapEventPlugin();
 
 const barButtonStyle = {
@@ -43,6 +47,7 @@ const rootStyle = {
   padding: 2+'px',
 };
 
+@ThemeDecorator(ThemeManager.getMuiTheme(MyRawTheme))
 export default class Navigation extends React.Component {
 
   constructor(props) {

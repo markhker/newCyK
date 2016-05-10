@@ -11,6 +11,10 @@ import NavigationChevronRight from 'material-ui/lib/svg-icons/navigation/chevron
 import CardText from 'material-ui/lib/card/card-text';
 import Link from '../components/Link';
 
+import MyRawTheme from '../components/theme';
+import ThemeManager from 'material-ui/lib/styles/theme-manager';
+import ThemeDecorator from 'material-ui/lib/styles/theme-decorator';
+
 
 const overflow = {
   overflow: 'visible',
@@ -24,6 +28,11 @@ const style = {
   zIndex: 9999,
 };
 
+const textStyle = {
+  fontSize: 1.5+'rem',
+  fontWeight: 200,
+};
+
 const CardOne = () => (
   <Card style={overflow}>
   <CardMedia>
@@ -35,13 +44,13 @@ const CardOne = () => (
         alt="Somos Cloud & Kloud" />
     </CardMedia>
     <CardTitle title="Quiénes somos" subtitle="Tecnología innovadora" />
-    <CardText>
+    <CardText style={textStyle}>
       Somos un equipo de expertos en tecnologías en la nube. Una empresa de desarrollo y tecnología innovadora en Cloud Computing capaz de llevar a tu compañía al siguiente nivel.
     </CardText>
     <CardActions>
       <FloatingActionButton style={style} linkButton={true}
       backgroundColor={'#08a6d6'}
-      href="/nosotros/"
+      href="/nosotros"
       onClick={Link.handleClick}>
         <NavigationChevronRight />
       </FloatingActionButton>
@@ -60,13 +69,13 @@ const CardTwo = () => (
         alt="Somos Cloud & Kloud" />
     </CardMedia>
     <CardTitle title="Qué hacemos" subtitle="Soluciones estratégicas" />
-    <CardText>
+    <CardText style={textStyle}>
       Ayudamos a tu organización a adaptarse a este nuevo mundo, llegar más lejos y obtener todos los beneficios del Cloud Computing. Nos esforzamos y enfocamos en la acción.
     </CardText>
     <CardActions>
       <FloatingActionButton style={style} linkButton={true}
       backgroundColor={'#08a6d6'}
-      href="/servicios/"
+      href="/servicios"
       onClick={Link.handleClick}>
         <NavigationChevronRight />
       </FloatingActionButton>
@@ -74,7 +83,7 @@ const CardTwo = () => (
   </Card>
 );
 
-
+@ThemeDecorator(ThemeManager.getMuiTheme(MyRawTheme))
 export default class extends Component {
 
   render() {

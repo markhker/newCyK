@@ -1,9 +1,9 @@
 @import '../../components/variables.scss';
 
-.services-header {
+.contact-header {
     width: 100%;
     height: 50vh;
-    background: url(https://storage.googleapis.com/cykloud.appspot.com/static/img/tech/services-1-480.jpg) center center no-repeat;
+    background: url(https://storage.googleapis.com/cykloud.appspot.com/static/img/tech/contact-1-480.jpg) center center no-repeat;
     background-color: $w;
     background-size: cover;
     position: relative;
@@ -22,19 +22,20 @@
     }
 }
 
-.services-section-1 {
+.contact-section-1 {
     justify-content: space-around;
     padding: 2rem 0 5rem;
     background-color: $w;
     margin-top: -5px;
     
-    div {
+    & > div {
         justify-content: space-around;
     }
     
     .paper {
         margin-bottom: 2rem;
-        cursor: pointer;
+        justify-content: space-around;
+        text-align: center;
     }
     
     h1 {
@@ -42,7 +43,7 @@
         font-weight: 200;
         font-size: 3rem;
         text-align: center;
-        margin-bottom: 2rem;
+        margin-bottom: 4rem;
     }
     
     article {
@@ -76,16 +77,16 @@
 }
 
 @media (min-width: $sm) {
-    .services-header {
-        background: url(https://storage.googleapis.com/cykloud.appspot.com/static/img/tech/services-1-768.jpg) center center no-repeat;
+    .contact-header {
+        background: url(https://storage.googleapis.com/cykloud.appspot.com/static/img/tech/contact-1-768.jpg) center center no-repeat;
         background-color: $w;
         background-size: cover;
     }
 }
 
 @media (min-width: $md) {
-    .services-header {
-        background: url(https://storage.googleapis.com/cykloud.appspot.com/static/img/tech/services-1-1024.jpg) center center no-repeat;
+    .contact-header {
+        background: url(https://storage.googleapis.com/cykloud.appspot.com/static/img/tech/contact-1-1024.jpg) center center no-repeat;
         background-color: $w;
         background-size: cover;
         padding: 2rem 0 1rem;
@@ -93,8 +94,8 @@
 }
 
 @media (min-width: $lg) {
-    .services-header {
-        background: url(https://storage.googleapis.com/cykloud.appspot.com/static/img/tech/services-1-1920.jpg) center center no-repeat;
+    .contact-header {
+        background: url(https://storage.googleapis.com/cykloud.appspot.com/static/img/tech/contact-1-1920.jpg) center center no-repeat;
         background-color: $w;
         background-size: cover;
     }  

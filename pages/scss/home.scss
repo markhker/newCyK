@@ -47,6 +47,7 @@
         font-size: 6rem;
         font-family: $titles-font;
         font-weight: 300;
+        text-shadow: 1px 1px 1px #000000;
     }
 }
 
@@ -58,9 +59,10 @@
     margin-top: -5px;
     
     h1 {
+        display: block;
         font-weight: 200;
         font-size: 3rem;
-        justify-content: space-around;
+        text-align: center;
         margin-bottom: 2rem;
     }
     
