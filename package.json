@@ -25,7 +25,7 @@
     "history": "latest",
     "hygienist-middleware": "latest",
     "lodash.merge": "latest",
-    "material-ui": "latest",
+    "material-ui": "^0.14.4",
     "mkdirp": "latest",
     "mocha": "latest",
     "ncp": "latest",
