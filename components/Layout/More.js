@@ -26,10 +26,10 @@ export default class More extends React.Component {
         
         <div className="col-1 more-buttons">
             <RaisedButton className="button" label="C&K Training" primary={true} labelStyle={contactStyle} backgroundColor={trainingColor} linkButton={true}
-              href="https://tr.cyk.mx" />
+              href="#" />
         
             <RaisedButton className="button" label="CodeFly" primary={true} labelStyle={contactStyle} backgroundColor={cfColor} linkButton={true}
-              href="https://codefly.cyk.mx" />
+              href="#" />
         </div>
       </section>
     );

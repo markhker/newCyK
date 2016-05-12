@@ -1,6 +1,24 @@
 @import '../../components/variables.scss';
 
 @font-face {
+ font-family: 'Social';
+ src: url(https://storage.googleapis.com/cykloud.appspot.com/static/icon1/flaticon.eot);
+ src: url(https://storage.googleapis.com/cykloud.appspot.com/static/icon1/flaticon.eot?#iefix) format('embedded-opentype'),
+ url(https://storage.googleapis.com/cykloud.appspot.com/static/font/icon1/flaticon.woff) format('wof'’),
+ url(https://storage.googleapis.com/cykloud.appspot.com/static/font/icon1/flaticon.ttf) format('truetype'),
+ url(https://storage.googleapis.com/cykloud.appspot.com/static/font/icon1/flaticon.svg#Flaticon) format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Social";
+    src: url(https://storage.googleapis.com/cykloud.appspot.com/static/font/icon1/flaticon.svg#Flaticon) format('svg');
+  }
+}
+/*
+@font-face {
   font-family: "Flaticon";
   src: url("fonts/icon/flaticon1.eot");
   src: url("fonts/icon/flaticon1.eot?#iefix") format("embedded-opentype"),
@@ -17,7 +35,7 @@
     src: url("fonts/icon/flaticon1.svg#Flaticon") format("svg");
   }
 }
-
+*/
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
     font-family: Flaticon;

@@ -1,0 +1,67 @@
+@import '../../components/variables.scss';
+
+.service-header {
+    width: 100%;
+    height: 30rem;
+    background-color: $w;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    
+    .img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center 5%;
+    }
+    
+    h1 {
+        display: none;
+        position: absolute;
+        bottom: 0;
+        text-align: right;
+        line-height: 5rem;
+        background-color: $w;
+        color: $w;
+        font-size: 6rem;
+        font-family: $titles-font;
+        font-weight: 300;
+        text-shadow: 1px 1px 1px $b-1;
+    }
+}
+
+.service-single {
+    justify-content: space-around;
+    padding: 2rem 0 5rem;
+    background-color: $w;
+    margin-top: -5px;
+    
+    div {
+        justify-content: space-around;
+    }
+    
+    .paper {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (min-width: $sm) {
+    .service-header {
+        h1 {
+            display: block;
+        }
+    }
+}
+
+@media (min-width: $md) {
+    
+}
+
+@media (min-width: $lg) {
+    
+}
